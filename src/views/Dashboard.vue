@@ -59,9 +59,6 @@ export default {
     AppDataTable,
     AppStatCard
   },
-  mounted() {
-    this.types = Object.keys(this.$refs.skeleton.rootTypes);
-  },
   created() {
     this.getSummary();
     this.getAllCountriesData();
@@ -109,8 +106,8 @@ export default {
         { text: "Deaths", value: "deaths" },
         { text: "Today deaths", value: "todayDeaths" },
         { text: "Active", value: "active" },
-        { text: "Test", value: "tests" },
-        { text: "Test per 1M", value: "testsPerOneMillion" }
+        { text: "Tests", value: "tests" },
+        { text: "Tests per 1M", value: "testsPerOneMillion" }
       ],
       loadingSkeleton: true,
       loadingStates: false,

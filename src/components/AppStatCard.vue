@@ -8,7 +8,7 @@
       </v-col>
       <v-col class="white--text text-center" cols="10">
         <div class="title">{{ title }}</div>
-        <div class="font-weight-bold title">{{ stat }}</div>
+        <div class="font-weight-bold title">{{ stat | comma }}</div>
       </v-col>
     </v-row>
   </v-card>
